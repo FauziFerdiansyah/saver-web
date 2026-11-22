@@ -1,0 +1,51 @@
+{
+  "name": "saver-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:emu": "VITE_USE_EMULATOR=1 vite",
+    "build": "tsc --noEmit && vite build",
+    "build:emu": "VITE_USE_EMULATOR=1 vite build --outDir dist-emu",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "icons": "node scripts/gen-icons.mjs"
+  },
+  "dependencies": {
+    "@tiptap/core": "3.27.0",
+    "@tiptap/extension-code-block-lowlight": "3.27.0",
+    "@tiptap/extension-highlight": "3.27.0",
+    "@tiptap/extension-image": "3.27.0",
+    "@tiptap/extension-placeholder": "3.27.0",
+    "@tiptap/extension-table": "3.27.0",
+    "@tiptap/extension-table-cell": "3.27.0",
+    "@tiptap/extension-table-header": "3.27.0",
+    "@tiptap/extension-table-row": "3.27.0",
+    "@tiptap/extension-task-item": "3.27.0",
+    "@tiptap/extension-task-list": "3.27.0",
+    "@tiptap/extension-text-align": "3.27.0",
+    "@tiptap/extension-text-style": "3.27.0",
+    "@tiptap/pm": "3.27.0",
+    "@tiptap/starter-kit": "3.27.0",
+    "crypto-js": "4.2.0",
+    "firebase": "12.13.0",
+    "highlight.js": "11.11.2",
+    "jsqr": "1.4.0",
+    "lowlight": "3.3.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "4.2.2",
+    "@types/react": "19.2.15",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.2",
+    "playwright-core": "1.55.0",
+    "sharp": "0.34.3",
+    "typescript": "6.0.3",
+    "vite": "8.0.14",
+    "vitest": "3.2.4"
+  }
+}
