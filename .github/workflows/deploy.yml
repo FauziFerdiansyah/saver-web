@@ -35,6 +35,9 @@ jobs:
           VITE_FIREBASE_APP_ID: ${{ secrets.VITE_FIREBASE_APP_ID }}
           VITE_FIREBASE_MEASUREMENT_ID: ${{ secrets.VITE_FIREBASE_MEASUREMENT_ID }}
       - uses: actions/configure-pages@v5
+        with:
+          # Create the Pages site with the "GitHub Actions" build type if it does not exist yet.
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
